@@ -2,6 +2,8 @@ require('dotenv/config');
 const path = require('path');
 const express = require('express');
 
+const db = require('./database');
+
 const app = express();
 
 const distPath = path.join(__dirname, 'dist/');
@@ -13,6 +15,14 @@ app.use(express.json());
 
 app.get('/api/test', (req, res) => {
   res.status(200).json({ success: 'Server test successful' });
+});
+
+app.get('/api/db/test', (req, res) => {
+  db.query('select * from "actors"')
+    .then(result => {
+      return res.json(result.rows[0]);
+    })
+    .catch(err => console.error(err));
 });
 
 app.listen(process.env.PORT, () => {
