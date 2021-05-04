@@ -2,7 +2,7 @@
 
 A sample boilerplate that has the [postgres movie rental database](https://www.postgresqltutorial.com/postgresql-sample-database/) to play with.
 
-Requires Docker.
+Requires Docker for use of PostgreSQL.
 
 To use:
 
