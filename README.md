@@ -2,7 +2,7 @@
 
 A sample boilerplate that has the [postgres movie rental database](https://www.postgresqltutorial.com/postgresql-sample-database/) to play with.
 
-Requires Docker.
+Requires Docker for use of PostgreSQL.
 
 To use:
 
@@ -12,6 +12,8 @@ docker compose up
 ```
 
 Go to `localhost:3000`
+
+A page should appear. Try running the tests and then remove the code for them.
 
 To not include movies database, remove the first volume here in the `docker-compose.yml`:
 ```

@@ -13,6 +13,7 @@ app.use(staticMiddleware);
 
 app.use(express.json());
 
+// Feel free to delete these tests once you've gotten things working
 app.get('/api/test', (req, res) => {
   res.status(200).json({ success: 'Server test successful' });
 });
