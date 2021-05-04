@@ -25,7 +25,7 @@ To not include movies database, remove the first volume here in the `docker-comp
 ```
 volumes:
       ~~- ./init.sql/:/docker-entrypoint-initdb.d/init.sql~~
-      - ./db:/var/lib/postgresql/data
+      - db:/var/lib/postgresql/data
 ```
 If you did this out of order, you can wipe the DB or just re-use this template and do it in the correct order.
 
