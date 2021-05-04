@@ -4,7 +4,7 @@ services:
     image: postgres:13-alpine
     volumes:
       - ./init.sql/:/docker-entrypoint-initdb.d/init.sql
-      - ./db:/var/lib/postgresql/data
+      - db:/var/lib/postgresql/data
     environment:
       - PGDATABASE=movies
       - POSTGRES_DB=movies
