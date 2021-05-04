@@ -4,7 +4,11 @@ A sample boilerplate that has the [postgres movie rental database](https://www.p
 
 Requires Docker for use of PostgreSQL.
 
-To use:
+This is designed in part to resemble the standard boilerplates used for apps at LearningFuze. As an alumni, you should be able to understand all the tech here except for the `docker-compose.yml`. I have, however, split up some code into files which is usually contained in the `package.json` due to my own personal preference and for accessibility. 
+
+This should also be very accessible to non- LFZ Alumni. 
+
+#### To use:
 
 ```
 cp .env.example.env
@@ -22,6 +26,7 @@ volumes:
       - ./db:/var/lib/postgresql/data
 ```
 
-You will need to delete the folder `db` if you ran `docker compose up` already and want to use without the movies DB. `/api/db/test/` will also no longer work.
 
-This will be simplified in the future.
+If you do not want to use PostgreSQL at all, you do not need docker and can just run `npm run dev`.
+
+If you encounter any bugs, please leave an issue report.
