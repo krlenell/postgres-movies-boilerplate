@@ -1,4 +1,4 @@
-# react-express-boilerplate
+# postgres-movies-boilerplate
 
 A sample boilerplate that has the [postgres movie rental database](https://www.postgresqltutorial.com/postgresql-sample-database/) to play with.
 
